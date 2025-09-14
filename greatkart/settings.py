@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "accounts",  # Custom app for user accounts
     "store",  # Custom app for the store
     "carts",  # Custom app for shopping cart functionality
+    "orders",  # Custom app for order management
 ]
 
 MIDDLEWARE = [
