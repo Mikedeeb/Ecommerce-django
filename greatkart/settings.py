@@ -123,10 +123,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR /'static'  # Directory for collected static files
+STATIC_URL = "/static/"
+STATIC_ROOT = BASE_DIR /'staticfiles'  # Directory for collected static files
 STATICFILES_DIRS = [
-    'greatkart/static',  # Directory for static files
+    BASE_DIR /'static',  # Directory for static files
 ]
 
 # media files configuration

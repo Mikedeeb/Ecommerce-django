@@ -1,0 +1,45 @@
+/* Remove Radio Buttons */
+.rate > input {
+    display: none;
+}
+
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label {
+    float: right;
+}
+
+.rate > label:before {
+    margin: 0;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005"; /* Unicode for star icon */
+    padding: .3rem .2rem;
+    cursor: pointer;
+}
+
+/* Half star */
+.rate .half:before {
+    content: "\f089"; /* Unicode for half star icon */
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click and hover */
+input:checked ~ label, label:hover ~ label {
+    color: #FFD700; /* Gold color for selected stars */
+}
+
+/* Hover Highlight */
+input:checked + label:hover, input:checked ~ label:hover,
+input:checked ~ label:hover ~ label, label:hover ~ input:checked ~ label {
+    color: #cc9000; /* Lighter gold for hover effect */
+}
+
+.rating-star i{
+    color: #cc9000 !important;
+}
